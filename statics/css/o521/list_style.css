@@ -1,0 +1,160 @@
+@charset "utf-8";
+.l_ban{
+	margin: 0 auto;
+	width:1200px;
+	height:613px;
+	background-position:top center;
+	background-repeat:no-repeat;
+}
+.list_body{
+	width:1200px;
+	padding:0 10px;
+	margin:0 auto;
+	background:url(../../images/o521/list_bg.jpg) center top no-repeat;	
+}
+.list_main{
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	zoom:1;
+	position:relative;
+	background-color:#fff;
+}
+.ppts_tit {
+    margin: 47px auto 36px auto;
+	text-align:center;
+}
+.ppts_tit span{
+	margin-left:5px;	
+}
+.list_tc{
+	width:1135px;
+	max-height:921px;
+	margin:0 auto;	
+}
+.list_tc li{
+	width:345px;
+	float:left;
+	position:relative;
+	text-align:center;	
+}
+.list_tc li a{
+	display:block;
+	overflow:hidden;
+	zoom:1;
+	position:relative;	
+}
+.list_tc li img{
+	width:345px;
+	height:230px;
+	transform-origin:bottom;	
+	-webkit-transform-origin:bottom;
+	transition:all ease-in-out 0.5s;	
+	-webkit-transition:all ease-in-out 0.5s;		
+}
+.list_tc li .li_zz{
+	width:345px;
+	height:230px;
+	position:absolute;
+	z-index:60;
+	top:0;
+	left:0;
+	background:url(../../images/o521/ny_pic_mb.png);
+	opacity:0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.list_tc li:hover .li_zz{
+	opacity:1;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+.list_tc li:hover img{
+	transform:scale(1.02);
+	-webkit-transform:scale(1.02);
+	transition:all ease-in-out 0.5s;	
+	-webkit-transition:all ease-in-out 0.5s;
+}
+.list_tc li a h3{
+	font:18px/16px folg;
+	color:#000;
+	margin:15px 0 6px 0;
+}
+.list_tc li a h4{
+	font:8px/8px "微软雅黑";
+	-webkit-transform: scale(0.85);
+	margin-bottom:30px;
+	color:#444;
+}
+/*
+.chg_page{
+	border-top:#ededed solid 5px;
+	width:1135px;
+	height:52px;
+	overflow:hidden;
+	position:relative;
+	zoom:1;
+	margin:10px auto 75px auto;
+}
+.chg_page li{
+	float:left;
+	width:112.6px;
+	height:42px;
+	text-align:center;
+	cursor:pointer;
+	color:#333;
+	font:12px/42px "微软雅黑";
+}
+.chg_page .pre{
+	position:absolute;
+	left:0;
+	z-index:60;
+	border-right:#bfbfc0 solid 1px;
+}
+
+.chg_page .nxt{
+	position:absolute;
+	right:0;
+	z-index:60;
+	border-left:#bfbfc0 solid 1px;
+}
+.page_num{
+	margin-left:114px;	
+}
+.page_num li{
+	transition:all ease-out 0.4s;	
+}
+.page_num .pgclk{
+	border-top:#b99867 solid 5px;
+}
+.page_num li:hover{
+	border-top:#b99867 solid 5px;
+}
+*/
+
+/*-----修改分页----*/
+.chg_page{border-top:#ededed solid 5px;width:1135px;height:52px;overflow:hidden;position:relative;zoom:1;margin:10px auto 75px auto;}
+.chg_page a{float:left;width:112.6px;height:42px;text-align:center;cursor:pointer;color:#333;font:12px/42px "微软雅黑";display:inline-block;}
+.chg_page span{float:left;width:112.6px;height:42px;text-align:center;cursor:pointer;color:#333;font:12px/42px "微软雅黑";display:inline-block;}
+.chg_page .pre{position:absolute;left:0;z-index:60;border-right:#bfbfc0 solid 1px;}
+.chg_page .nxt{position:absolute;right:0;z-index:60;border-left:#bfbfc0 solid 1px;}
+/*.chg_page a:nth-child(2){margin-left:114px;}*/
+.chg_page a{transition:all ease-out 0.4s;}
+.chg_page span{border-top:#b99867 solid 5px;transition:all ease-out 0.4s;}
+.chg_page a:hover{border-top:#b99867 solid 5px;}
+/*内容页*/
+.ppts_tit i{
+	font:10px/25px "微软雅黑";
+	-webkit-transform: scale(0.80);
+	color:#c9c9c9;
+}
+.pics{
+	width:1135px;
+	overflow:hidden;
+	position:relative;
+	zoom:1;
+	margin:10px auto 75px auto;
+}
+.pics img{
+	margin:0 auto;
+	width:100%;
+	display:block;
+}

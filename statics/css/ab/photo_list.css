@@ -1,0 +1,27 @@
+.distance{
+	height:70px;
+}
+.photo_title{
+	margin-bottom: 30px;
+	display: block;
+	text-align: center;
+	width:100%;
+}
+/*图片详细*/
+.photo_data{
+	margin: 0 auto;
+}
+.page{
+	display: block!important;
+}
+.show_photo{
+	display: block;
+	text-align: center;
+}
+.show_content{
+	margin:0 auto;
+	display: block;
+	float:none!important;
+}
+
+

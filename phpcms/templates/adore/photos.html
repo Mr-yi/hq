@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/star.png" type="favicon/ico" />
+
+    <title>adore-照片列表页</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/photo_list.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pagestyle.css">
+
+     <style>
+        .cont{background: url('images/logo.png') no-repeat #353243;background-size: 75px;background-position: 5% 0;}
+        .nav{width: 80%;float: right;margin-top: 25px;}
+        .nav ul li a{color:#fec4ac;font-size: 16px;padding: 0.5em 0.7em;}
+        .header-description{background: url('images/banner1_2.jpg') no-repeat;background-size: 100% 100%;}
+        @media screen and (max-width:480px) {
+            .cont{ background:#353243;background-size: 50px; }
+            .nav{width:100%;padding:0px;}
+            .nav ul{width: 100%}
+            .header-description{height:60vh;}
+            .heading img{width: 120px;}
+            .heading-subtitle{letter-spacing:5px;}
+            .center{width: 20px;}
+        }
+    </style>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){     
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+                });
+            });
+    </script>
+  </head>
+  <body>
+
+    <!--== 4. Header ==-->
+
+        <section class="header" id="header">
+           <!--top-nav-->
+                <div class="top-nav">
+                     <div class="container cont">
+                         <div class="nav">
+                             <span class="menu"> </span> 
+                             <ul class="nav nav-pills pull-right">
+                                 <li role="presentation"><a  href="index.html">HOME</a></li>
+                                 <li role="presentation"><a  href="photo_list.html">ABOUT</a></li>
+                                 <li role="presentation"><a  href="photos.html">SERVICE</a></li>
+                                 <li role="presentation"><a  href="#works">VENUE</a></li>
+                                 <li role="presentation"><a  href="#meet">COUTURE</a></li>
+                                <li role="presentation"><a  href="#testimonial">GIFT</a></li>
+                                <li role="presentation"><a  href="#contact">GALLERY</a></li>
+                                <li role="presentation"><a  href="#contact">CONTACT</a></li>
+                                 <div class="clearfix"> </div>
+                             </ul>
+                         </div>
+                         <!--script-nav-->
+                         <script>
+                         $("span.menu").click(function(){
+                         $(".nav ul").slideToggle("slow" , function(){
+                         });
+                         });
+                         </script>
+                         <!--script-nav-->
+
+                     </div>
+                </div>
+                <!--top-nav ends-->
+            
+        </section> <!-- /#header -->
+        <section class="meet" id="meet">
+            <div class="container">  
+                <div class="wrapper">
+                    <div class="distance"></div>
+                    <div class="photo_data  ">
+                        <span class="show_photo">
+                          <img src="images/m_01.jpg" alt="">
+                        </span>
+                        
+                    </div> <!-- /.row -->
+                    <span class="col-sm-8 show_content">这里可以做一些介绍!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span>
+                </div> <!-- /.wrapper -->
+            </div> <!-- /.container -->
+        </section> <!-- /#meet -->
+        <div class="container small">
+          <div class="pagination page">
+              <ul>
+                  <li ><a href="#"></a></li>
+
+                  <li style="margin-left:50px;"><a href="#"></a></li>
+                  
+              </ul>
+          </div>
+        </div>
+        <a href="#header" id="back-to-top" class="top"><i class="fa fa-chevron-up"></i></a>
+    
+        
+
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.circlechart.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="nivo-lightbox/nivo-lightbox.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+
+
+  </body>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      // $("img.lazy").lazyload({effect: "fadeIn"});
+      $("img").lazyload({effect: "fadeIn",placeholder : "images/load.gif"});
+  });
+</script>
+</html>
